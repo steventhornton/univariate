@@ -11,6 +11,10 @@ knitr::opts_chunk$set(
 )
 ```
 
+<!-- badges: start -->
+[![R build status](https://github.com/steventhornton/univariate/workflows/R-CMD-check/badge.svg)](https://github.com/steventhornton/univariate/actions)
+<!-- badges: end -->
+
 # univariate
 
 univariate is an R package for finding solutions to univariate functions.

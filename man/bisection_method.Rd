@@ -20,14 +20,17 @@ A root of \code{f}. If the algorithm does not converge, \code{NA}
 is returned.
 }
 \description{
-The bisection method is an iterative root-finding method that does not use
-derivatives.
+The bisection method is an iterative root-finding method with linear
+convergence that does not use derivatives.
 }
 \details{
 The bisection method finds the root of a univariate function \eqn{f}
 given two initial guesses \eqn{x_0} and \eqn{x_1} where \eqn{x_0 < x_1} and
 \eqn{sign(f(x_0)) = -sign(f(x_1))} by sequentially bisecting the interval
 (\eqn{x_2 = (x_0 + x_1) / 2}).
+
+Convergence is guaranteed as long as f is continuous in the interval
+\eqn{[x_0, x_1]} and \eqn{f(x_0)} and \eqn{f(x_1)} have opposite signs
 
 The algorithm terminates when:
 \itemize{
@@ -37,9 +40,6 @@ The algorithm terminates when:
 }
 }
 \examples{
-f <- cos
-x0 <- 0
-x1 <- pi
-bisection_method(f, x0, x1)
+bisection_method(cos, 0, pi)
 
 }
