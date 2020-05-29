@@ -1,0 +1,16 @@
+Package: univariate
+Title: Roots of Univariate Functions
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Steven",
+           family = "Thornton",
+           role = c("aut", "cre"),
+           email = "steven@steventhornton.ca")
+Description: Functions for computing the roots of univariate functions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+Suggests: 
+    testthat
