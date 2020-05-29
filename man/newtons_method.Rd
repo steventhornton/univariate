@@ -38,3 +38,12 @@ The algorithm terminates when:
 \item the algorithm converges and \eqn{|f(x_{n}) - f(x_{n + 1})| < tol}.
 }
 }
+\examples{
+newtons_method(cos,
+               function(x) -sin(x),
+               0.5)
+newtons_method(function(x) x ^ 3 - x - 2,
+               function(x) 3 * x ^ 2 - 1,
+               1)
+
+}

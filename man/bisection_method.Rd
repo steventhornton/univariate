@@ -41,5 +41,6 @@ The algorithm terminates when:
 }
 \examples{
 bisection_method(cos, 0, pi)
+bisection_method(function(x) x ^ 3 - x - 2, 1, 2)
 
 }

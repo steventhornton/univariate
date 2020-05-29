@@ -30,6 +30,16 @@
 #' @return A root of \code{f} near \code{x0}. If the algorithm does not
 #'   converge, \code{NA} is returned.
 #'
+#' @examples
+#' halleys_method(cos,
+#'                function(x) -sin(x),
+#'                function(x) -cos(x),
+#'                0.5)
+#' halleys_method(function(x) x ^ 3 - x - 2,
+#'                function(x) 3 * x ^ 2 - 1,
+#'                function(x) 6 * x,
+#'                1)
+#'
 #' @export
 halleys_method <- function(f, fp, fpp, x0, tol = 1e-8) {
 

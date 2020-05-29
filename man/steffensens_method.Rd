@@ -36,3 +36,8 @@ The algorithm terminates when:
 \item the algorithm converges and \eqn{|f(x_{n}) - f(x_{n + 1})| < tol}.
 }
 }
+\examples{
+steffensens_method(cos, 0)
+steffensens_method(function(x) x ^ 3 - x - 2, 2)
+
+}

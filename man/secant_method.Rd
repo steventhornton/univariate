@@ -37,3 +37,8 @@ The algorithm terminates when:
 \item the algorithm converges and \eqn{|f(x_{n}) - f(x_{n + 1})| < tol}.
 }
 }
+\examples{
+secant_method(cos, 0, 1)
+secant_method(function(x) x ^ 3 - x - 2, 1, 2)
+
+}

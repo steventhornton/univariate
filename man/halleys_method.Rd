@@ -40,3 +40,14 @@ iterate (\eqn{x_n}),
 \item the algorithm converges and \eqn{|f(x_{n}) - f(x_{n + 1})| < tol}.
 }
 }
+\examples{
+halleys_method(cos,
+               function(x) -sin(x),
+               function(x) -cos(x),
+               0.5)
+halleys_method(function(x) x ^ 3 - x - 2,
+               function(x) 3 * x ^ 2 - 1,
+               function(x) 6 * x,
+               1)
+
+}

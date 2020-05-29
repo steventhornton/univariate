@@ -26,6 +26,10 @@
 #' @return A root of \code{f} near \code{x0}. If the algorithm does not
 #'   converge, \code{NA} is returned.
 #'
+#' @examples
+#' steffensens_method(cos, 0)
+#' steffensens_method(function(x) x ^ 3 - x - 2, 2)
+#'
 #' @export
 steffensens_method <- function(f, x0, tol = 1e-8) {
 

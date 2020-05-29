@@ -27,6 +27,10 @@
 #' @return A root of \code{f}. If the algorithm does not converge, \code{NA}
 #'   is returned.
 #'
+#' @examples
+#' secant_method(cos, 0, 1)
+#' secant_method(function(x) x ^ 3 - x - 2, 1, 2)
+#'
 #' @export
 secant_method <- function(f, x0, x1, tol = 1e-8) {
 

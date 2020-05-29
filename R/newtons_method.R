@@ -28,6 +28,14 @@
 #' @return A root of \code{f} near \code{x0}. If the algorithm does not
 #'   converge, \code{NA} is returned.
 #'
+#' @examples
+#' newtons_method(cos,
+#'                function(x) -sin(x),
+#'                0.5)
+#' newtons_method(function(x) x ^ 3 - x - 2,
+#'                function(x) 3 * x ^ 2 - 1,
+#'                1)
+#'
 #' @export
 newtons_method <- function(f, fp, x0, tol = 1e-8) {
 

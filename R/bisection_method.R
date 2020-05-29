@@ -32,6 +32,7 @@
 #'
 #' @examples
 #' bisection_method(cos, 0, pi)
+#' bisection_method(function(x) x ^ 3 - x - 2, 1, 2)
 #'
 #' @export
 bisection_method <- function(f, x0, x1, tol = 1e-8) {
