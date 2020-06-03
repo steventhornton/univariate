@@ -13,6 +13,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![R build status](https://github.com/steventhornton/univariate/workflows/R-CMD-check/badge.svg)](https://github.com/steventhornton/univariate/actions)
+[![Codecov test coverage](https://codecov.io/gh/steventhornton/univariate/branch/master/graph/badge.svg)](https://codecov.io/gh/steventhornton/univariate?branch=master)
 <!-- badges: end -->
 
 # univariate
@@ -26,7 +27,7 @@ devtools::install_github("steventhornton/univariate")
 
 ## To Do
 - Univariate root finding:
-	- Bisection method
+	- ~~Bisection method~~
 	- ~~Newton’s method~~
 	- ~~Secant method~~
 	- ~~Halley’s method~~
